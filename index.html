@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Video Streaming</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #222;
+            color: #FFF;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+        }
+
+        .title {
+            font-size: 2rem;
+        }
+
+        .button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            background-color: #FFA500;
+            cursor: pointer;
+            color: #000;
+        }
+
+        .video-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('background.png');
+            background-size: cover;
+            background-position: center;
+        }
+
+        video {
+            width: 80%;
+            max-width: 800px;
+            border: 5px solid #FFF;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="title">Your Site Title</div>
+        <button class="button">GET UPDATES</button>
+    </div>
+
+    <div class="video-section">
+        <video controls>
+            <source src="/path/to/your/local/video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="footer">
+        Follow Us: [Your Social Media Links Here]
+    </div>
+</body>
+</html>
